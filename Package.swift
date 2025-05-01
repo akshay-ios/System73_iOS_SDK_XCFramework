@@ -14,6 +14,7 @@ let package = Package(
         ),
     ],
     dependencies: [
+        // dependency version match
 //        .package(url: "https://github.com/apple/swift-protobuf.git", exact: "1.26.0"),
 //        .package(url: "https://github.com/daltoniam/Starscream.git", from: "4.0.8")
     ],
