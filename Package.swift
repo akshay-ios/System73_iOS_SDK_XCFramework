@@ -20,9 +20,15 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "PolyNetSDK",
+            name: "PolyNetSDKBinary",
             url:"https://artifacts.s73cloud.com/repository/maven-s73-releases/s73-polynet-plat/polynet-swift-package-manager/5.2.0/polynet-swift-package-manager-5.2.0.zip",
             checksum: "9cb83606e31349d63703e583aee92c9a3c1028f534d700f66b40bb9b37ad70d6"
+        ),
+        .target(
+            name: "PolyNetSDK",
+            dependencies: [
+                "PolyNetSDKBinary"
+            ]
         )
     ]
 )
